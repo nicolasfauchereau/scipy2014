@@ -2470,11 +2470,11 @@ In&nbsp;[24]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[25]:
+In&nbsp;[34]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="nb">map</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">13.8333</span><span class="p">,</span> <span class="o">-</span><span class="mf">171.7500</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">tiles</span><span class="o">=</span><span class="s">&#39;Mapbox&#39;</span><span class="p">,</span> <span class="n">API_key</span><span class="o">=</span><span class="s">&#39;xxxx&#39;</span><span class="p">)</span>
+<div class="highlight"><pre><span class="nb">map</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">13.8333</span><span class="p">,</span> <span class="o">-</span><span class="mf">171.7500</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span> <span class="c"># can also use MapBox tiles</span>
 </pre></div>
 
 </div>
@@ -2485,7 +2485,7 @@ In&nbsp;[25]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[26]:
+In&nbsp;[35]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2501,7 +2501,7 @@ In&nbsp;[26]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[27]:
+In&nbsp;[36]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2517,7 +2517,7 @@ In&nbsp;[27]:
 
 
 <div class="output_area"><div class="prompt output_prompt">
-    Out[27]:</div>
+    Out[36]:</div>
 
 <div class="output_html rendered_html output_subarea output_pyout">
 <iframe srcdoc="<!DOCTYPE html>
@@ -2552,9 +2552,9 @@ In&nbsp;[27]:
 
 var map = L.map('map').setView([-13.8333, -171.75], 10);
 
-L.tileLayer('http://{s}.tiles.mapbox.com/v3/nicolasf.ic0ebom5/{z}/{x}/{y}.png', {
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18,
-    attribution: 'Map tiles by <a href=&quot;http://www.mapbox.com/m&quot;>Mapbox</a> Data by <a href=&quot;http://openstreetmap.org&quot;>OpenStreetMap</a>, under <a href=&quot;http://creativecommons.org/licenses/by-sa/3.0&quot;>CC BY SA</a>.'
+    attribution: 'Map data (c) <a href=&quot;http://openstreetmap.org&quot;>OpenStreetMap</a> contributors'
 }).addTo(map);
 
 
@@ -2563,7 +2563,7 @@ var circle_1 = L.circle([-13.8333, -171.75], 3000, {
                             fillColor: '#FF0000',
                             fillOpacity: 0.6
                             });
-circle_1.bindPopup(&quot;<div align='center'> <img src='./figure.png' alt='imaginary temperature anomaly' width='320' height='160'> </div>&quot;);
+circle_1.bindPopup(&quot;<div align='center'> here's a image <br><img src='./figure.png' alt='imaginary temperature anomaly' width='320' height='160'> </div>&quot;);
 map.addLayer(circle_1)
 
 var circle_2 = L.circle([-13.9, -171.74], 2000, {
@@ -2571,7 +2571,7 @@ var circle_2 = L.circle([-13.9, -171.74], 2000, {
                             fillColor: '#FF0000',
                             fillOpacity: 0.6
                             });
-circle_2.bindPopup(&quot;<div align='center'> <img src='./figure.png' alt='imaginary temperature anomaly' width='320' height='160'> </div>&quot;);
+circle_2.bindPopup(&quot;<div align='center'> here's a image <br><img src='./figure.png' alt='imaginary temperature anomaly' width='320' height='160'> </div>&quot;);
 map.addLayer(circle_2)
 
 
