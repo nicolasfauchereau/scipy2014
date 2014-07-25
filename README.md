@@ -4,7 +4,7 @@
 
 ---
 
-See the HTML rendered versions of the notebooks by following the links below:
+See the HTML rendered versions of the notebooks via nbviewer by following the links below:
 
 + [IPython notebook and the widgets](http://nbviewer.ipython.org/github/nicolasfauchereau/scipy2014/blob/master/IPython_widgets.ipynb)
 + [Iris and Cartopy](http://nbviewer.ipython.org/github/nicolasfauchereau/scipy2014/blob/master/iris_cartopy.ipynb)
